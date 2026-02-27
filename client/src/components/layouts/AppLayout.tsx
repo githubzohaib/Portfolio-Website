@@ -3,6 +3,8 @@ import Hero from "./Hero";
 import AboutMe from "./AboutMe";
 import Services from "./Skills";
 import Projects from "./Projects";
+import ProjectDetail from "./ProjectDetail";  
+import Resume from "./Resume";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -37,6 +39,16 @@ const LandingPage = () => {
       {/* Projects Section */}
       <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
         <Projects />
+      </motion.div>
+
+      {/* Project Detail Section */}
+      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+        <ProjectDetail />
+      </motion.div> */}
+
+      {/* Resume Section */}
+      <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+        <Resume />
       </motion.div>
 
       {/* Faculty Reviews Section */}

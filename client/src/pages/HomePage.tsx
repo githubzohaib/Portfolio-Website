@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "@/components/ui/Navbar";
 import SearchSection from "@/components/ui/SearchSection";
 import RecommendBooks from "@/components/ui/RecommendBooks";
-import FooterSection from "@/components/layouts/FooterSection";
+import FooterSection from "@/components/layouts/ProjectDetail";
 
 const HomePage: React.FC = () => {
   return (
