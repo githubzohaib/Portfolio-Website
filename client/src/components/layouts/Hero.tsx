@@ -321,7 +321,7 @@ export default function HeroSection(): JSX.Element {
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 py-24 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
         {/* ── LEFT: Text content ── */}
-        <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
+        <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left w-full">
 
           {/* Badge */}
           <motion.div
@@ -355,11 +355,12 @@ export default function HeroSection(): JSX.Element {
             transition={{ duration: 0.7, delay: 0.2, ease: [0.25, 0.46, 0.45, 0.94] }}
           >
             <h1
-              className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-none mb-3"
+              className="font-bold leading-none mb-3"
               style={{
                 fontFamily: "'Sora', 'DM Sans', sans-serif",
                 letterSpacing: "-0.04em",
                 color: "#F1F5F9",
+                fontSize: "clamp(2.5rem, 10vw, 4.5rem)",
               }}
             >
               Alex Chen
@@ -374,11 +375,12 @@ export default function HeroSection(): JSX.Element {
             className="mb-6 h-10 flex items-center"
           >
             <span
-              className="text-2xl sm:text-3xl font-semibold"
+              className="font-semibold"
               style={{
                 fontFamily: "'JetBrains Mono', monospace",
                 color: "#60A5FA",
                 letterSpacing: "-0.02em",
+                fontSize: "clamp(1.1rem, 4vw, 1.875rem)",
               }}
             >
               {typedRole}
@@ -394,8 +396,8 @@ export default function HeroSection(): JSX.Element {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.55 }}
-            className="text-base sm:text-lg mb-10 max-w-lg"
-            style={{ color: "#64748B", lineHeight: 1.8 }}
+            className="mb-10 max-w-lg"
+            style={{ color: "#64748B", lineHeight: 1.8, fontSize: "clamp(0.9rem, 2.5vw, 1.125rem)" }}
           >
             I architect distributed systems that handle{" "}
             <span style={{ color: "#94A3B8" }}>millions of requests</span>, obsess over
@@ -488,18 +490,18 @@ export default function HeroSection(): JSX.Element {
           </motion.div>
         </div>
 
-        {/* ── RIGHT: Code editor + floating cards ── */}
+        {/* ── RIGHT: Code editor + floating cards — hidden below lg ── */}
         <motion.div
-          className="flex-1 relative"
+          className="flex-1 relative hidden lg:block"
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.9, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-          style={{ minHeight: "420px" }}
+          style={{ minHeight: "420px", overflow: "visible" }}
         >
-          {/* Floating metric cards */}
-          <MetricCard label="Latency P99" value="4.2ms" sub="last 30d avg" color="#34D399" delay={1.2} x={-8} y={15} />
-          <MetricCard label="Uptime" value="99.98%" sub="12 month avg" color="#60A5FA" delay={1.4} x={105} y={25} />
-          <MetricCard label="Throughput" value="2.4M" sub="req/day peak" color="#F59E0B" delay={1.6} x={102} y={72} />
+          {/* Floating metric cards — repositioned to stay within visible bounds */}
+          <MetricCard label="Latency P99" value="4.2ms" sub="last 30d avg" color="#34D399" delay={1.2} x={5} y={15} />
+          <MetricCard label="Uptime" value="99.98%" sub="12 month avg" color="#60A5FA" delay={1.4} x={88} y={10} />
+          <MetricCard label="Throughput" value="2.4M" sub="req/day peak" color="#F59E0B" delay={1.6} x={88} y={82} />
 
           {/* Main code editor with 3D tilt */}
           <TiltCard>
