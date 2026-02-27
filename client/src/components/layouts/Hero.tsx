@@ -363,7 +363,7 @@ export default function HeroSection(): JSX.Element {
                 fontSize: "clamp(2.5rem, 10vw, 4.5rem)",
               }}
             >
-              Alex Chen
+              Zohaib Ali
             </h1>
           </motion.div>
 
