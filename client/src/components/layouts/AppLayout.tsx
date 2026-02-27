@@ -6,6 +6,7 @@ import Projects from "./Projects";
 import ProjectDetail from "./ProjectDetail";  
 import Resume from "./Resume";
 import Achievements from "./Achievements";
+import Contact from "./Contact";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -55,6 +56,11 @@ const LandingPage = () => {
       {/* Achievements Section */}
       <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
         <Achievements />
+      </motion.div>
+
+      {/* Contact Section */}
+      <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+        <Contact />
       </motion.div>
 
       {/* Faculty Reviews Section */}
