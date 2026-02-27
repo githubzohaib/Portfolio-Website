@@ -221,7 +221,7 @@ export default function AboutMe(): JSX.Element {
                   }}
                 >
                   <img
-                    src="/images/profile.jpg"
+                    src="/images/Pic.png"
                     alt="Alex Chen — Software Engineer"
                     className="w-full h-full object-cover"
                     style={{ filter: "brightness(0.92) saturate(1.05)" }}
