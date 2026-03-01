@@ -313,7 +313,7 @@ export default function AboutMe(): JSX.Element {
                       className="text-xs font-bold leading-none mb-0.5"
                       style={{ color: "#60A5FA", fontFamily: "'JetBrains Mono', monospace" }}
                     >
-                      30+ shipped
+                      10+ shipped
                     </div>
                     <div
                       className="text-xs leading-none"
@@ -388,7 +388,7 @@ export default function AboutMe(): JSX.Element {
               transition={{ delay: 0.5 }}
               className="flex flex-wrap gap-2 justify-center lg:justify-start"
             >
-              {["TypeScript", "Rust", "Go", "Kubernetes", "PostgreSQL", "Redis"].map((tech, i) => (
+              {["ReactJS", "TypeScript", "ExpressJS", "NodeJS", "MongoDB"].map((tech, i) => (
                 <motion.span
                   key={tech}
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -417,9 +417,9 @@ export default function AboutMe(): JSX.Element {
               className="flex gap-10 justify-center lg:justify-start"
             >
               {[
-                { value: "5+", label: "Years Exp", color: "#60A5FA" },
-                { value: "30+", label: "Projects", color: "#34D399" },
-                { value: "12+", label: "Systems", color: "#A78BFA" },
+                { value: "1+", label: "Years Exp", color: "#60A5FA" },
+                { value: "10+", label: "Projects", color: "#34D399" },
+                { value: "6+", label: "Systems", color: "#A78BFA" },
               ].map((stat) => (
                 <div key={stat.label} className="flex flex-col items-center lg:items-start gap-0.5">
                   <span
