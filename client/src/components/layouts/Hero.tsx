@@ -468,7 +468,7 @@ export default function HeroSection(): JSX.Element {
             transition={{ delay: 0.85 }}
             className="flex flex-wrap gap-2 justify-center lg:justify-start"
           >
-            {["TypeScript", "Rust", "Go", "Kubernetes", "PostgreSQL", "Redis"].map((tech, i) => (
+            {["ReactJS", "TypeScript", "ExpressJS", "NodeJS", "MongoDB"].map((tech, i) => (
               <motion.span
                 key={tech}
                 initial={{ opacity: 0, scale: 0.8 }}
