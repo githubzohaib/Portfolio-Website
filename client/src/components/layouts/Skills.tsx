@@ -92,6 +92,13 @@ function ParticleField() {
 
 const skills = [
   {
+    name: "JavaScript",
+    description: "Strict typing, generics & compiler-driven correctness at scale",
+    icon: "JS",
+    color: "#F59E0B",
+    glow: "rgba(245,158,11,0.25)",
+  },
+  {
     name: "TypeScript",
     description: "Strict typing, generics & compiler-driven correctness at scale",
     icon: "TS",
@@ -113,47 +120,20 @@ const skills = [
     glow: "rgba(52,211,153,0.25)",
   },
   {
-    name: "Go",
-    description: "Compiled concurrency for latency-critical microservices",
-    icon: "Go",
-    color: "#60A5FA",
-    glow: "rgba(96,165,250,0.25)",
+    name: "Express.js",
+    description: "Event-driven server runtime powering high-throughput APIs",
+    icon: "Ex",
+    color: "#3444d3",
+    glow: "rgba(52, 113, 211, 0.25)",
   },
   {
-    name: "PostgreSQL",
-    description: "Relational ACID-compliant database with advanced query planning",
-    icon: "PG",
-    color: "#818CF8",
-    glow: "rgba(129,140,248,0.25)",
+    name: "MongoDB",
+    description: "Document-oriented database with horizontal scaling and flexible schema",
+    icon: "MG",
+    color: "#81f89f",
+    glow: "rgba(61, 122, 42, 0.25)",
   },
-  {
-    name: "Redis",
-    description: "In-memory data store for caching, queues and real-time pub/sub",
-    icon: "Rd",
-    color: "#F87171",
-    glow: "rgba(248,113,113,0.25)",
-  },
-  {
-    name: "Docker",
-    description: "Containerised workloads ensuring reproducible deployments",
-    icon: "Dk",
-    color: "#38BDF8",
-    glow: "rgba(56,189,248,0.25)",
-  },
-  {
-    name: "Kubernetes",
-    description: "Orchestrating container fleets with auto-scaling and self-healing",
-    icon: "K8",
-    color: "#7C3AED",
-    glow: "rgba(124,58,237,0.25)",
-  },
-  {
-    name: "AWS",
-    description: "Cloud infrastructure spanning compute, storage and serverless",
-    icon: "AWS",
-    color: "#F59E0B",
-    glow: "rgba(245,158,11,0.25)",
-  },
+  
 ];
 
 function SkillCard({
@@ -457,7 +437,7 @@ export default function SkillsSection(): JSX.Element {
           transition={{ delay: 0.9 }}
           className="flex flex-wrap gap-2 justify-center mt-14"
         >
-          {["REST", "GraphQL", "gRPC", "WebSockets", "CI/CD", "Terraform", "Prometheus", "OpenTelemetry"].map((tag, i) => (
+          {["REST", "GraphQL", "WebSockets", "CI/CD"].map((tag, i) => (
             <motion.span
               key={tag}
               initial={{ opacity: 0, scale: 0.85 }}
