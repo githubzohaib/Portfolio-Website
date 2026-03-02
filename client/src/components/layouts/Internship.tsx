@@ -601,7 +601,7 @@ export default function InternshipSection(): JSX.Element {
             gap: "14px", width: "100%", maxWidth: "560px",
           }}>
             <StatPill value="2" label="Internships completed" color="#60A5FA" delay={0.25} inView={inView} />
-            <StatPill value="5+" label="Projects shipped" color="#34D399" delay={0.33} inView={inView} />
+            <StatPill value="10+" label="Projects shipped" color="#34D399" delay={0.33} inView={inView} />
             <StatPill value="MERN" label="Core stack expertise" color="#22D3EE" delay={0.41} inView={inView} />
           </div>
         </motion.div>
