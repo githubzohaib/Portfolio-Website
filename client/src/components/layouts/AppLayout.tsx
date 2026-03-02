@@ -5,7 +5,7 @@ import Services from "./Skills";
 import Projects from "./Projects";
 import ProjectDetail from "./ProjectDetail";  
 import Resume from "./Resume";
-import Achievements from "./Achievements";
+import Achievements from "./HackExp";
 import Contact from "./Contact";
 
 const fadeInUp = {
