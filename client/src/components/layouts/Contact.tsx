@@ -45,10 +45,9 @@ function ParticleField() {
 }
 
 const contactLinks = [
-  { label: "GitHub", handle: "github.com/alexchen", icon: "⬡", color: "#60A5FA", href: "#" },
-  { label: "LinkedIn", handle: "linkedin.com/in/alexchen", icon: "◈", color: "#22D3EE", href: "#" },
-  { label: "Twitter / X", handle: "@alexchen_dev", icon: "◧", color: "#34D399", href: "#" },
-  { label: "Email", handle: "alex@chen.dev", icon: "◉", color: "#7C3AED", href: "mailto:alex@chen.dev" },
+  { label: "GitHub", handle: "githubzohaib", icon: "⬡", color: "#60A5FA", href: "https://github.com/githubzohaib" },
+  { label: "LinkedIn", handle: "Zohaib Ali", icon: "◈", color: "#22D3EE", href: "https://www.linkedin.com/in/zohaib-ali-5251b328b/" },
+  { label: "Email", handle: "zohaibaliwork@gmail.com", icon: "◉", color: "#7C3AED", href: "mailto:zohaibaliwork@gmail.com" },
 ];
 
 function ContactLink({ item, index, inView }: { item: typeof contactLinks[0]; index: number; inView: boolean }) {
@@ -315,10 +314,10 @@ export default function ContactSection(): JSX.Element {
                 <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px", color: "#34D399", letterSpacing: "0.1em", textTransform: "uppercase" }}>Available for new roles</span>
               </div>
               <p style={{ fontFamily: "'DM Sans', sans-serif", fontSize: "13px", color: "#64748B", lineHeight: 1.75, marginBottom: "14px" }}>
-                Open to <span style={{ color: "#94A3B8" }}>Staff / Principal Engineer</span> roles focused on distributed systems, platform engineering or developer tooling. Remote-first preferred.
+                Open to <span style={{ color: "#94A3B8" }}>Full Stack Developer</span> roles focused on distributed systems, platform engineering or developer tooling.
               </p>
               <div style={{ display: "flex", flexWrap: "wrap", gap: "7px" }}>
-                {["Remote-first", "Staff+ IC", "Distributed Systems", "Platform Eng."].map((tag) => (
+                {["Full Stack Developer", "Frontend Developer", "Developer", "Distributed Systems", "Platform Eng."].map((tag) => (
                   <span key={tag} style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "10.5px", color: "#64748B", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: "6px", padding: "3px 9px", letterSpacing: "0.04em" }}>{tag}</span>
                 ))}
               </div>
@@ -361,8 +360,8 @@ export default function ContactSection(): JSX.Element {
                     onSubmit={handleSubmit}
                     style={{ padding: "28px 28px 32px", display: "flex", flexDirection: "column", gap: "16px" }}
                   >
-                    <FloatingInput label="Name" placeholder="Alex Chen" value={name} onChange={setName} delay={0.4} inView={inView} />
-                    <FloatingInput label="Email" type="email" placeholder="alex@example.com" value={email} onChange={setEmail} delay={0.48} inView={inView} />
+                    <FloatingInput label="Name" placeholder="Zohaib Ali" value={name} onChange={setName} delay={0.4} inView={inView} />
+                    <FloatingInput label="Email" type="email" placeholder="zohaibaliwork@gmail.com" value={email} onChange={setEmail} delay={0.48} inView={inView} />
                     <FloatingInput label="Message" placeholder="Tell me about the project..." value={message} onChange={setMessage} multiline delay={0.56} inView={inView} />
 
                     <motion.div
