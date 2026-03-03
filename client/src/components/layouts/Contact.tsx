@@ -1,5 +1,6 @@
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import { useRef, useState, useEffect } from "react";
+import axios from "axios";
 
 function GridBackground() {
   return (
@@ -217,13 +218,18 @@ export default function ContactSection(): JSX.Element {
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!name || !email || !message) return;
-    setSubmitting(true);
-    await new Promise((r) => setTimeout(r, 1400));
-    setSubmitting(false);
-    setSubmitted(true);
-  };
+  e.preventDefault();
+  if (!name || !email || !message) return;
+
+  setSubmitting(true);
+  await fetch("/api/contact", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, email, message }),
+  });
+  setSubmitting(false);
+  setSubmitted(true);
+};
 
   const canSubmit = name.trim() && email.trim() && message.trim();
 
