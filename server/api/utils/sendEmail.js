@@ -1,4 +1,4 @@
-// api/utils/sendEmail.js
+require("dotenv").config();
 const nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
@@ -9,15 +9,13 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const sendEmail = async ({ to, subject, text }) => {
-  const mailOptions = {
-    from: process.env.EMAIL_USER,
+module.exports = async function sendEmail({ to, subject, text }) {
+  const info = await transporter.sendMail({
+    from: `"Portfolio Contact" <${process.env.EMAIL_USER}>`,
     to,
     subject,
     text,
-  };
+  });
 
-  await transporter.sendMail(mailOptions);
+  console.log("Email sent:", info.response);
 };
-
-module.exports = sendEmail;
