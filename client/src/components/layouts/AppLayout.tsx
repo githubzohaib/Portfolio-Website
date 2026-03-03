@@ -24,24 +24,24 @@ const LandingPage = () => {
       {/* <Navbar /> */}
 
       {/* Hero Section */}
-      <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
         <Hero/>
-      </motion.div>
+      {/* </motion.div> */}
 
       {/* About Us Section */}
-      <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
         <AboutMe />
-      </motion.div>
+      {/* </motion.div> */}
 
       {/* Services Section */}
-      <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
         <Services />
-      </motion.div>
+      {/* </motion.div> */}
 
       {/* Projects Section */}
-      <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
         <Projects />
-      </motion.div>
+      {/* </motion.div> */}
 
       {/* Project Detail Section */}
       {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
@@ -49,19 +49,19 @@ const LandingPage = () => {
       </motion.div> */}
 
       {/* Resume Section */}
-      <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
         <Resume />
-      </motion.div>
+      {/* </motion.div> */}
 
       {/* Achievements Section */}
-      <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
         <Achievements />
-      </motion.div>
+      {/* </motion.div> */}
 
       {/* Contact Section */}
-      <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
+      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
         <Contact />
-      </motion.div>
+      {/* </motion.div> */}
 
       {/* Faculty Reviews Section */}
       {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
