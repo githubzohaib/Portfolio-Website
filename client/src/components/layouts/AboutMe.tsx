@@ -284,7 +284,7 @@ export default function AboutMe(): JSX.Element {
                       className="text-xs font-bold leading-none mb-0.5"
                       style={{ color: "#34D399", fontFamily: "'JetBrains Mono', monospace" }}
                     >
-                      5+ yrs
+                      1+ yrs
                     </div>
                     <div
                       className="text-xs leading-none"
