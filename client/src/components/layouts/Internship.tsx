@@ -357,7 +357,7 @@ function ProfileCard({ inView }: { inView: boolean }): JSX.Element {
     { label: "────────────────────────────", value: "", accent: "#1E3A5F", size: "10px", weight: 400, mono: true },
     { label: "University", value: "NED UET", accent: "#94A3B8", size: "11.5px", weight: 600, mono: false },
     { label: "Internships", value: "2", accent: "#94A3B8", size: "11.5px", weight: 600, mono: false },
-    { label: "Projects Shipped", value: "5+", accent: "#94A3B8", size: "11.5px", weight: 600, mono: false },
+    { label: "Projects Shipped", value: "10+", accent: "#94A3B8", size: "11.5px", weight: 600, mono: false },
     { label: "────────────────────────────", value: "", accent: "#1E3A5F", size: "10px", weight: 400, mono: true },
     { label: "React.js · Node.js · Express.js", value: "", accent: "#34D399", size: "11px", weight: 400, mono: true },
     { label: "MongoDB · PostgreSQL · REST APIs", value: "", accent: "#60A5FA", size: "11px", weight: 400, mono: true },
