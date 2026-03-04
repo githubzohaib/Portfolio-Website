@@ -1,21 +1,22 @@
 const express = require("express");
 const dotenv = require("dotenv");
-const connectDB = require("./config/db");
-const contactRoutes = require("./routes/contactRoutes");
+const connectDB = require("../config/db");
+const contactRoutes = require("../routes/contactRoutes");
 const cors = require("cors");
 const serverless = require("serverless-http");
 
 dotenv.config();
-connectDB();
 
 const app = express();
-
 app.use(cors());
 app.use(express.json());
-
 app.use("/api/contact", contactRoutes);
 
-// ✅ Export as serverless handler
+// Connect to DB once at cold start
+connectDB().catch(err => {
+  console.error("DB connection failed", err);
+});
+
 module.exports.handler = serverless(app);
 
 // const express = require("express");
