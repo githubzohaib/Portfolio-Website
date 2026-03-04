@@ -8,16 +8,20 @@ const serverless = require("serverless-http");
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: ["https://portfolio-zohaibali.vercel.app", "http://localhost:5173"],
+  methods: ["GET","POST","PUT","DELETE"],
+  allowedHeaders: ["Content-Type","Authorization"]
+}));
 app.use(express.json());
 app.use("/api/contact", contactRoutes);
 
-// Connect to DB once at cold start
-connectDB().catch(err => {
-  console.error("DB connection failed", err);
-});
+const handler = async (req, res) => {
+  await connectDB(); // ensures DB is connected per cold start
+  return app(req, res);
+};
 
-module.exports.handler = serverless(app);
+module.exports.handler = serverless(handler);
 
 // const express = require("express");
 // const dotenv = require("dotenv");
