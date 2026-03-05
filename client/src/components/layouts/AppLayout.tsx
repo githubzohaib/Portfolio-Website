@@ -3,10 +3,10 @@ import Hero from "./Hero";
 import AboutMe from "./AboutMe";
 import Services from "./Skills";
 import Projects from "./Projects";
-import ProjectDetail from "./ProjectDetail";  
-import Resume from "./Internship";
-import Achievements from "./HackExp";
+import Internship from "./Internship";
+import HackExp from "./HackExp";
 import Contact from "./Contact";
+import Footer from  "./Footer";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -15,68 +15,38 @@ const fadeInUp = {
 
 const LandingPage = () => {
   return (
-    <div
-      className={`min-h-screen flex flex-col transition-colors duration-300`}
-      id="home"
-    >
+    <div className="min-h-screen flex flex-col transition-colors duration-300">
 
-      {/* Header */}
-      {/* <Navbar /> */}
+      <section id="hero">
+        <Hero />
+      </section>
 
-      {/* Hero Section */}
-      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
-        <Hero/>
-      {/* </motion.div> */}
-
-      {/* About Us Section */}
-      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
+      <section id="about">
         <AboutMe />
-      {/* </motion.div> */}
+      </section>
 
-      {/* Services Section */}
-      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
+      <section id="experience">
         <Services />
-      {/* </motion.div> */}
+      </section>
 
-      {/* Projects Section */}
-      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
+      <section id="projects">
         <Projects />
-      {/* </motion.div> */}
+      </section>
 
-      {/* Project Detail Section */}
-      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
-        <ProjectDetail />
-      </motion.div> */}
+      <section id="internship">
+        <Internship />
+      </section>
 
-      {/* Resume Section */}
-      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
-        <Resume />
-      {/* </motion.div> */}
+      <section id="hackathon">
+        <HackExp />
+      </section>
 
-      {/* Achievements Section */}
-      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
-        <Achievements />
-      {/* </motion.div> */}
-
-      {/* Contact Section */}
-      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}> */}
+      <section id="contact">
         <Contact />
-      {/* </motion.div> */}
+      </section>
 
-      {/* Faculty Reviews Section */}
-      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
-        <FacultyReviews />
-      </motion.div> */}
+      <Footer />
 
-      {/* Why Us Section */}
-      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
-        <WhyUs />
-      </motion.div> */}
-
-      {/* Footer */}
-      {/* <motion.div variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }}>
-        <FooterSection />
-      </motion.div> */}
     </div>
   );
 };
