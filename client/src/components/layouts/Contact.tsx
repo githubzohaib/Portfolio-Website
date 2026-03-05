@@ -450,7 +450,7 @@ export default function ContactSection(): JSX.Element {
       </div>
 
       {/* Footer strip */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}}
         transition={{ delay: 1 }}
@@ -460,9 +460,9 @@ export default function ContactSection(): JSX.Element {
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <div style={{ width: "28px", height: "28px", borderRadius: "8px", background: "linear-gradient(135deg, #2563EB22, #7C3AED11)", border: "1px solid rgba(96,165,250,0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <span style={{ fontFamily: "monospace", fontSize: "12px", color: "#60A5FA" }}>⬡</span>
-            </div>
-            <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", color: "#1E3A5F", letterSpacing: "0.06em" }}>Alex Chen · 2025</span>
-          </div>
+            </div> */}
+            {/* <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "12px", color: "#1E3A5F", letterSpacing: "0.06em" }}>Alex Chen · 2025</span> */}
+          {/* </div>
           <div style={{ display: "flex", gap: "24px" }}>
             {["Projects", "Skills", "Resume", "Contact"].map((item) => (
               <a key={item} href="#" onClick={(e) => e.preventDefault()}
@@ -476,7 +476,7 @@ export default function ContactSection(): JSX.Element {
           </div>
           <span style={{ fontFamily: "'JetBrains Mono', monospace", fontSize: "11px", color: "#1E3A5F", letterSpacing: "0.06em" }}>Built with React + Framer Motion</span>
         </div>
-      </motion.div>
+      </motion.div> */}
 
       <div className="absolute bottom-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent 0%, #1E3A5F 30%, #2563EB55 50%, #1E3A5F 70%, transparent 100%)" }} />
       <div className="absolute top-0 left-0 right-0 h-px" style={{ background: "linear-gradient(90deg, transparent 0%, #1E3A5F 30%, #2563EB55 50%, #1E3A5F 70%, transparent 100%)" }} />
