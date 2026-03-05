@@ -411,61 +411,55 @@ export default function HeroSection(): JSX.Element {
 
           {/* CTA Buttons */}
           <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.65 }}
-            className="flex flex-col sm:flex-row gap-4 mb-12 w-full sm:w-auto"
-          >
-            <motion.button
-              whileHover={{ scale: 1.02, y: -2 }}
-              whileTap={{ scale: 0.98 }}
-              className="relative px-8 py-4 rounded-xl font-semibold text-sm overflow-hidden"
-              style={{
-                background: "linear-gradient(135deg, #2563EB 0%, #7C3AED 100%)",
-                color: "#fff",
-                fontFamily: "'JetBrains Mono', monospace",
-                letterSpacing: "0.02em",
-                boxShadow: "0 0 30px rgba(37,99,235,0.35), 0 4px 24px rgba(0,0,0,0.4)",
-              }}
-            >
-              <motion.span
-                className="absolute inset-0"
-                style={{ background: "linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 100%)" }}
-                initial={{ opacity: 0 }}
-                whileHover={{ opacity: 1 }}
-              />
-              <span className="relative">View Projects →</span>
-            </motion.button>
+  initial={{ opacity: 0, y: 16 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.7, delay: 0.65 }}
+  className="flex flex-col sm:flex-row gap-4 mb-12 w-full sm:w-auto"
+>
+  {/* View Projects */}
+  <motion.a
+    href="#projects"
+    whileHover={{ scale: 1.02, y: -2 }}
+    whileTap={{ scale: 0.98 }}
+    className="relative px-8 py-4 rounded-xl font-semibold text-sm overflow-hidden"
+    style={{
+      background: "linear-gradient(135deg, #2563EB 0%, #7C3AED 100%)",
+      color: "#fff",
+      fontFamily: "'JetBrains Mono', monospace",
+      letterSpacing: "0.02em",
+      boxShadow: "0 0 30px rgba(37,99,235,0.35), 0 4px 24px rgba(0,0,0,0.4)",
+      display: "inline-block",
+    }}
+  >
+    <motion.span
+      className="absolute inset-0"
+      style={{ background: "linear-gradient(135deg, rgba(255,255,255,0.15) 0%, transparent 100%)" }}
+      initial={{ opacity: 0 }}
+      whileHover={{ opacity: 1 }}
+    />
+    <span className="relative">View Projects →</span>
+  </motion.a>
 
-            <motion.button
-              whileHover={{ scale: 1.02, y: -2 }}
-              whileTap={{ scale: 0.98 }}
-              className="px-8 py-4 rounded-xl font-semibold text-sm"
-              style={{
-                background: "rgba(255,255,255,0.03)",
-                border: "1px solid rgba(255,255,255,0.1)",
-                color: "#94A3B8",
-                fontFamily: "'JetBrains Mono', monospace",
-                letterSpacing: "0.02em",
-                backdropFilter: "blur(8px)",
-              }}
-              onMouseEnter={(e) => {
-                const el = e.currentTarget as HTMLButtonElement;
-                el.style.borderColor = "rgba(96,165,250,0.4)";
-                el.style.color = "#E2E8F0";
-                el.style.boxShadow = "0 0 20px rgba(96,165,250,0.12)";
-              }}
-              onMouseLeave={(e) => {
-                const el = e.currentTarget as HTMLButtonElement;
-                el.style.borderColor = "rgba(255,255,255,0.1)";
-                el.style.color = "#94A3B8";
-                el.style.boxShadow = "none";
-              }}
-            >
-              Download CV
-            </motion.button>
-          </motion.div>
-
+  {/* Download CV */}
+  <motion.a
+    href="/resume/ZohaibAli.pdf"
+    download
+    whileHover={{ scale: 1.02, y: -2 }}
+    whileTap={{ scale: 0.98 }}
+    className="px-8 py-4 rounded-xl font-semibold text-sm"
+    style={{
+      background: "rgba(255,255,255,0.03)",
+      border: "1px solid rgba(255,255,255,0.1)",
+      color: "#94A3B8",
+      fontFamily: "'JetBrains Mono', monospace",
+      letterSpacing: "0.02em",
+      backdropFilter: "blur(8px)",
+      display: "inline-block",
+    }}
+  >
+    Download CV
+  </motion.a>
+</motion.div>
           {/* Social / tech stack pills */}
           <motion.div
             initial={{ opacity: 0 }}
