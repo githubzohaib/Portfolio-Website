@@ -1,5 +1,6 @@
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { useEffect, useRef, useState, useCallback } from "react";
+import Navbar from "./Navbar";
 
 // ─── Typing animation hook ───────────────────────────────────────────────────
 function useTypingEffect(texts: string[], speed = 60, pause = 1800) {
@@ -301,6 +302,10 @@ export default function HeroSection(): JSX.Element {
       style={{ backgroundColor: "#060A12", fontFamily: "'DM Sans', 'Sora', sans-serif" }}
       aria-label="Hero"
     >
+
+      {/* Navbar overlay */}
+    <Navbar />
+    
       <GridBackground />
       <ParticleField />
 
