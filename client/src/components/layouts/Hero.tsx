@@ -457,7 +457,7 @@ export default function HeroSection(): JSX.Element {
       display: "inline-block",
     }}
   >
-    Download CV
+    Download Resume
   </motion.a>
 </motion.div>
           {/* Social / tech stack pills */}
