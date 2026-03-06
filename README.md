@@ -24,9 +24,13 @@ Displays my professional experience and development journey.
 
 Showcases selected projects with details about the technologies used and the purpose of each project.
 
-### Certificates
+### Internship
 
-Lists professional certifications and achievements.
+Lists professional Internships Experience.
+
+### Hackathon
+
+Lists Hackathon Experience.
 
 ### Contact
 
