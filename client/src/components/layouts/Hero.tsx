@@ -442,7 +442,7 @@ export default function HeroSection(): JSX.Element {
 
   {/* Download CV */}
   <motion.a
-    href="/resume/ZohaibAli.pdf"
+    href="/resume/Zohaib-Resume.pdf"
     download
     whileHover={{ scale: 1.02, y: -2 }}
     whileTap={{ scale: 0.98 }}
