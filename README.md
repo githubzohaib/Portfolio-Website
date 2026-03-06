@@ -1,7 +1,3 @@
-Here is a **minimal README.md** tailored to your request (MERN stack + no clone steps).
-
----
-
 # Portfolio Website
 
 A personal developer portfolio built using the **MERN Stack** to showcase my projects, professional experience, certifications, and technical skills. The website provides an interactive interface where visitors can explore my work and contact me.
