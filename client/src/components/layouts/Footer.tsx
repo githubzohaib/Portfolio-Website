@@ -54,11 +54,13 @@ function ContactLink({ icon, value, href }: ContactLinkProps) {
         fontFamily: "'JetBrains Mono', monospace",
         fontSize: "12px",
         letterSpacing: "0.02em",
-        color: hov ? "#94A3B8" : "#374151",
+        // was #374151 (too dark on #060A12) → now a visible slate/light color
+        color: hov ? "#CBD5E1" : "#94A3B8",
         transition: "color 0.2s",
       }}
     >
-      <span style={{ color: hov ? "#60A5FA" : "#1F2937", transition: "color 0.2s" }}>
+      {/* icon: was #1F2937 → now clearly visible */}
+      <span style={{ color: hov ? "#60A5FA" : "#64748B", transition: "color 0.2s" }}>
         {icon}
       </span>
       {value}
@@ -71,9 +73,10 @@ type SocialBtnProps = {
   label: string;
   href: string;
   hoverColor: string;
+  restColor: string;
 };
 
-function SocialBtn({ icon, label, href, hoverColor }: SocialBtnProps) {
+function SocialBtn({ icon, label, href, hoverColor, restColor }: SocialBtnProps) {
   const [hov, setHov] = useState(false);
   return (
     <a
@@ -90,9 +93,12 @@ function SocialBtn({ icon, label, href, hoverColor }: SocialBtnProps) {
         width: 36,
         height: 36,
         borderRadius: "9px",
-        background: hov ? "rgba(255,255,255,0.04)" : "transparent",
-        border: `1px solid ${hov ? "rgba(255,255,255,0.1)" : "rgba(255,255,255,0.05)"}`,
-        color: hov ? hoverColor : "#2D3748",
+        // rest bg slightly lighter so buttons aren't invisible
+        background: hov ? "rgba(255,255,255,0.07)" : "rgba(255,255,255,0.03)",
+        // border: was nearly invisible → now clearly defined at rest
+        border: `1px solid ${hov ? "rgba(255,255,255,0.18)" : "rgba(255,255,255,0.12)"}`,
+        // icon color: was #2D3748 (very dark) → now visible at rest
+        color: hov ? hoverColor : restColor,
         transition: "all 0.2s",
         textDecoration: "none",
       }}
@@ -139,6 +145,7 @@ export default function Footer() {
           transition={{ duration: 0.5 }}
           style={{ display: "flex", flexDirection: "column", gap: "5px" }}
         >
+          {/* Name: unchanged — gradient looks great */}
           <span style={{
             fontFamily: "'Sora', sans-serif",
             fontSize: "14px",
@@ -151,13 +158,14 @@ export default function Footer() {
           }}>
             Zohaib Ali
           </span>
+          {/* Copyright: was #1F2937 (invisible) → readable muted slate */}
           <span style={{
             fontFamily: "'JetBrains Mono', monospace",
             fontSize: "10px",
-            color: "#1F2937",
+            color: "#64748B",
             letterSpacing: "0.04em",
           }}>
-            <span style={{ color: "#2563EB" }}>©</span> {year} · All rights reserved
+            <span style={{ color: "#3B82F6" }}>©</span> {year} · All rights reserved
           </span>
         </motion.div>
 
@@ -179,7 +187,8 @@ export default function Footer() {
             value="zohaibaliwork@gmail.com"
             href="mailto:zohaibaliwork@gmail.com"
           />
-          <div style={{ width: "1px", height: "14px", background: "rgba(255,255,255,0.06)" }} />
+          {/* Divider: slightly more visible */}
+          <div style={{ width: "1px", height: "14px", background: "rgba(255,255,255,0.10)" }} />
           <ContactLink
             icon={<IconPhone />}
             value="+92 336 2082383"
@@ -199,13 +208,15 @@ export default function Footer() {
             icon={<IconLinkedIn />}
             label="LinkedIn"
             href="https://linkedin.com/in/zohaibali"
-            hoverColor="#0A84FF"
+            hoverColor="#60A5FA"
+            restColor="#64748B"   // was #2D3748 — now clearly visible
           />
           <SocialBtn
             icon={<IconGithub />}
             label="GitHub"
             href="https://github.com/githubzohaib"
             hoverColor="#E2E8F0"
+            restColor="#64748B"   // was #2D3748 — now clearly visible
           />
         </motion.div>
       </div>
