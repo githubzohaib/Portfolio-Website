@@ -207,7 +207,7 @@ export default function Footer() {
           <SocialBtn
             icon={<IconLinkedIn />}
             label="LinkedIn"
-            href="https://linkedin.com/in/zohaibali"
+            href="https://www.linkedin.com/in/zohaib-ali-5251b328b/"
             hoverColor="#60A5FA"
             restColor="#64748B"   // was #2D3748 — now clearly visible
           />
