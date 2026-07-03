@@ -1,4 +1,3 @@
-// api/routes/contactRoutes.js
 const express = require("express");
 const router = express.Router();
 const { handleContact } = require("../controllers/contactController"); // ✅ correct
