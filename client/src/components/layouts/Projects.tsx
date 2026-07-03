@@ -77,15 +77,15 @@ const projects: Project[] = [
     github: null, // No github link for this one
   },
   {
-    name: "PayVerge",
-    subtitle: "Modern Frontend Application",
-    description: "Modular and reusable React.js component-based fintech UI with fully responsive mobile-first design, performance optimization, and cross-browser compatibility for seamless UX.",
+    name: "Student Score Predictor",
+    subtitle: "Machine Learning Web Application",
+    description: "ML-powered academic performance predictor using study hours, attendance, and classroom participation as features, with a React.js + Tailwind CSS frontend and FastAPI backend for seamless real-time predictions.",
     gradient: "linear-gradient(135deg, #07101a 0%, #0a1828 40%, #0d2040 100%)",
     accent: "#06B6D4",
     accentGlow: "rgba(6,182,212,0.28)",
-    tags: ["React.js", "Tailwind CSS", "HTML5", "CSS3"],
+    tags: ["React.js", "FastAPI", "Tailwind CSS", "Machine Learning"],
     icon: "◈",
-    liveDemo: "https://payverge-pv.vercel.app/",
+    liveDemo: "https://students-prediction-model.vercel.app/",
     github: null, // Add GitHub URL here if needed
   },
   {
