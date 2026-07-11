@@ -114,7 +114,7 @@ const internships: InternshipEntry[] = [
     certificate: "https://drive.google.com/file/d/12Nlv4QoLAEdZ9FIyYBng_JxnHRXr4whp/view?usp=drivesdk",
     highlights: [
       "Implemented modern UI components and responsive layouts using React.js",
-      "Integrate backend APIs for measurably optimized performance",
+      "Integrate backend APIs with frontend",
       "Collaborated directly with stakeholders to improve usability and system reliability",
     ],
   },
