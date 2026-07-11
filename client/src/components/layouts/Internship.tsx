@@ -103,18 +103,18 @@ const internships: InternshipEntry[] = [
     ],
   },
   {
-    role: "Full Stack Developer Intern",
+    role: "Frontend Developer Intern",
     company: "Engr. Abul Kalam Library",
     period: "2024",
     location: "Karachi, Pakistan",
     description:
-      'Refined and enhanced the "NextBook" digital library platform by introducing new scalable features, improving API performance, and collaborating with stakeholders on UX improvements.',
+      'Refined and enhanced the "NextBook" digital library platform by introducing new scalable features, and collaborating with stakeholders on UX improvements.',
     color: "#22D3EE",
     tags: ["React.js", "Node.js", "MongoDB", "REST APIs"],
-    certificate: "https://tinyurl.com/pavpd6n3",
+    certificate: "https://drive.google.com/file/d/12Nlv4QoLAEdZ9FIyYBng_JxnHRXr4whp/view?usp=drivesdk",
     highlights: [
       "Implemented modern UI components and responsive layouts using React.js",
-      "Improved backend APIs and database structure for measurably optimized performance",
+      "Integrate backend APIs for measurably optimized performance",
       "Collaborated directly with stakeholders to improve usability and system reliability",
     ],
   },
