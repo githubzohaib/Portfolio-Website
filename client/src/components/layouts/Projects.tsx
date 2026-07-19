@@ -89,16 +89,16 @@ const projects: Project[] = [
     github: null, // Add GitHub URL here if needed
   },
   {
-    name: "EcoGuard",
-    subtitle: "Wildlife Monitoring & Management System",
-    description: "Full-stack environmental monitoring platform built on MERN stack with RESTful APIs managing wildlife data, patrol reports, ranger assignments, and an admin dashboard with analytics and data visualization.",
+    name: "HelpGhar",
+    subtitle: "Home Services Marketplace Platform",
+    description: "Full-stack home services marketplace connecting customers with verified workers, featuring a RAG-powered chatbot for user queries and ML-driven gig ranking with personalized worker recommendations.",
     gradient: "linear-gradient(135deg, #091a07 0%, #0d2a0a 40%, #123510 100%)",
     accent: "#4ADE80",
     accentGlow: "rgba(74,222,128,0.25)",
-    tags: ["MongoDB", "Express.js", "React.js", "Node.js", "REST APIs"],
+    tags: ["React.js", "TypeScript", "RAG Chatbot", "ML Recommendations"],
     icon: "⬟",
-    liveDemo: null, // No live demo for this one
-    github: "https://github.com/githubzohaib/EcoGuard",
+    liveDemo: "https://help-ghar-beta.vercel.app/",
+    github: null,
   },
 ];
 
